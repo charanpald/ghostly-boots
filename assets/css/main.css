@@ -116,7 +116,8 @@ h6, .h6 {
 }
 
 .blog-image-container {
-   padding: 20px;
+   padding-bottom: 20px;
+   padding-right: 20px;
 }
 
 .blog-image {

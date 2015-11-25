@@ -41,23 +41,14 @@
    <div class="container blog-body">
       <div class="row">
 
-         <div class="col-sm-8 blog-main">
+         <div class="col-sm-12 blog-main">
 
             {{{ body }}}
 
          </div>
          <!-- /.blog-main -->
 
-         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-            <div class="sidebar-module">
-               <ol class="list-unstyled">
-                  <li>
-                     <a href="/rss">
-                        <img src="/assets/images/feed-icon-28x28.png"> Subscribe
-                     </a>
-                  </li>
-               </ol>
-            </div>
+
 
 
 
@@ -69,7 +60,9 @@
    <!-- /.container -->
 
    <footer class="blog-footer">
-      <p>© {{@blog.title}} 2015 | <a href="#">Back to top</a></p>
+      <p>© {{@blog.title}} 2015 | <a href="#">Back to top</a> | <a href="/rss">
+         <img src="/assets/images/feed-icon-14x14.png"> Subscribe
+      </a></p>
 
    </footer>
 
