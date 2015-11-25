@@ -8,6 +8,8 @@ A simple, customisable [Ghost](https://ghost.org/) theme based on [Bootstrap] (h
 * Fully responsive for use with mobiles and tablets
 * Readily customisable
 * Beautiful typography using Google Fonts
+* Works with Ghost 0.7+
+* Social media sharing (Facebook, Twitter, Google+) for each post
 
 ## Installing
 
