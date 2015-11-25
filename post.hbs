@@ -1,0 +1,23 @@
+{{!< default}}
+{{#post}}
+
+   <div class="blog-post">
+      <h2 class="blog-post-title">{{title}}</h2>
+      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}}, <a href="#">{{author.name}}</a></p>
+      {{#if image}}
+         <div class="blog-image-container">
+            <img src="{{image}}" class="img-responsive blog-image">
+         </div>
+      {{/if}}
+      <section class="post-content">
+         {{content}}
+      </section>
+      {{#if tags}}
+         <p>Tags:
+            {{#foreach tags}}
+               <a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a>
+            {{/foreach}}
+         </p>
+      {{/if}}
+   </div>
+{{/post}}
