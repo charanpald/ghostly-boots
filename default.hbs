@@ -24,7 +24,7 @@
 
 <body>
 
-   <div class="blog-header" style='background-image: url("{{@blog.cover}}"); '>
+   <div class="blog-header" style='background-image: url("{{@blog.cover}}"); background-size:cover;'>
       {{#if @blog.logo}}
       <div class="blog-logo">
          <a href="{{@blog.url}}">
@@ -36,7 +36,7 @@
          <span class="blog-title">{{@blog.title}}</span>
       {{/if}}
       <p class="lead blog-description">{{@blog.description}}</p>
-      
+
    </div>
 
    {{ navigation }}
