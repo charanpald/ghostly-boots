@@ -13,8 +13,12 @@ A simple, customisable [Ghost](https://ghost.org/) theme based on [Bootstrap] (h
 
 ## Installing
 
-1. Download the files using the repository using the "Download ZIP" option
-2. Unzip the files and rename the folder to `ghostly-boots`
-3. Copy the folder into your Ghost theme directory `ghost/content/themes`
-4. Restart ghost and log in to your dashboard
-5. In settings under themes select **ghostly-boots** and save
+1. Download the repository using the "Download ZIP" button
+2. Unzip the files and rename the resulting folder to `ghostly-boots`
+3. Copy the folder into your Ghost theme directory `ghost/content/themes/`
+4. Restart Ghost
+5. Log in to Ghost and in the settings select the **ghostly-boots** theme and save
+
+## Credits
+
+Social media icons come from [Casper] (https://github.com/TryGhost/Casper)
