@@ -3,7 +3,7 @@
 
    <div class="blog-post">
       <h2 class="blog-post-title">{{title}}</h2>
-      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by <a href="#">{{author.name}}</a></p>
+      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by  {{#author}}<a href="{{url}}">{{name}}</a></p> {{/author}}
       {{#if image}}
          <div class="blog-image-container">
             <img src="{{image}}" class="img-responsive blog-image">
@@ -23,24 +23,26 @@
          </p>
       {{/if}}
    </section>
-   <section class="share">
-      Share this post:
-      <a class="icon-twitter share-icon" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-      </a>
-      <a class="icon-facebook share-icon" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-      </a>
-      <a class="icon-google-plus share-icon" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-      </a>
-   </section>
-   <hr>
-   <ul class="pager">
-      {{#prev_post}}
-         <li><a href="{{url}}">&larr; {{title}}</a> </li>
-      {{/prev_post}}
-      {{#next_post}}
-         <li><a href="{{url}}">{{title}} &rarr;</a></span>
-         </li>
-      {{/next_post}}
-   </ul>
+   {{#is "post"}}
+      <section class="share">
+         Share this post:
+         <a class="icon-twitter share-icon" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+         </a>
+         <a class="icon-facebook share-icon" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+         </a>
+         <a class="icon-google-plus share-icon" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+         </a>
+      </section>
+      <hr>
+      <ul class="pager">
+         {{#prev_post}}
+            <li><a href="{{url}}">&larr; {{title}}</a> </li>
+         {{/prev_post}}
+         {{#next_post}}
+            <li><a href="{{url}}">{{title}} &rarr;</a></span>
+            </li>
+         {{/next_post}}
+      </ul>
+   {{/is}}
 
 {{/post}}

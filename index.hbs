@@ -3,7 +3,7 @@
 {{#foreach posts}}
    <div class="blog-post">
       <h2 class="blog-post-title">{{title}}</h2>
-      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by <a href="#">{{author.name}}</a></p>
+      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by  {{#author}}<a href="{{url}}">{{name}}</a></p> {{/author}}
       {{#if image}}
          <div class="blog-image-container">
             <img src="{{image}}" class="img-responsive blog-image">
