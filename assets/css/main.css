@@ -30,6 +30,12 @@ h6, .h6 {
   }
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+  }
+}
+
 /*
 * ==========================================================================
 * Blog header settings
@@ -90,8 +96,7 @@ h6, .h6 {
  */
 
 .blog-header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   color: #999;
   text-align: center;
   background-color: #eeefff;
@@ -112,6 +117,15 @@ h6, .h6 {
   color: #999;
 }
 
+.blog-logo {
+   padding-bottom: 20px;
+}
+
+.blog-logo-img {
+   margin: 0 auto;
+   padding: 10px;
+}
+
 /*
 * ==========================================================================
 * Main body settings
@@ -126,13 +140,7 @@ h6, .h6 {
 
 }
 
-.blog-logo {
-   padding-bottom: 20px;
-}
 
-.blog-logo-img {
-   margin: 0 auto;
-}
 
 .blog-image-container {
    padding-bottom: 20px;
@@ -171,7 +179,7 @@ h6, .h6 {
 }
 .pager li > a {
   min-width: 150px;
-  padding-left: 10px; 
+  padding-left: 10px;
   padding-right: 10px;
   text-align: center;
   border-radius: 2px;
