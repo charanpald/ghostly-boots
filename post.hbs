@@ -16,11 +16,13 @@
    </div>
    <section>
       {{#if tags}}
-         <p>Tags:
+         <div>
+            <span class="tags">Tags:
             {{#foreach tags}}
                <a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a>
             {{/foreach}}
-         </p>
+            </span>
+         </div>
       {{/if}}
    </section>
    {{#is "post"}}

@@ -170,8 +170,9 @@ h6, .h6 {
   text-align: center;
 }
 .pager li > a {
-  width: 160px;
-  padding: 5px 5px;
+  min-width: 150px;
+  padding-left: 10px; 
+  padding-right: 10px;
   text-align: center;
   border-radius: 2px;
 }
@@ -198,6 +199,10 @@ h6, .h6 {
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
+}
+
+.tags {
+
 }
 
 /*
