@@ -58,7 +58,7 @@ h6, .h6 {
   display: inline-block;
   padding: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .blog-nav-item:hover,
@@ -83,6 +83,7 @@ h6, .h6 {
 
 .blog-navbar {
    background-color: #f9f9f9;
+   background-image: none;
    border: 1px solid #e5e5e5;
 }
 
@@ -102,14 +103,22 @@ h6, .h6 {
   background-color: #eeefff;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
+
+}
+
+.blog-header-gradient {
+    background-image: linear-gradient(to bottom, #fcfcff 0px, #fcfcfc 100%);
+    background-repeat: repeat-x;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
 }
 
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
-  color: black;
+  color: #000055;
   font-size: 60px;
   font-weight: bold;
+  text-shadow: 0px 3px 2px #999;
 }
 
 .blog-description {
@@ -137,7 +146,7 @@ h6, .h6 {
    border: 1px solid #e5e5e5;
    padding-left: 15px;
    padding-right: 15px;
-
+   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
 }
 
 
