@@ -50,11 +50,19 @@
    </div>
 
    <footer class="blog-footer">
-      <p>© {{@blog.title}} 2015 | <a href="#">Back to top</a> |
-         <a href="/rss">
-            <img src="/assets/images/feed-icon-14x14.png"> Subscribe
-         </a>
-      </p>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-4">
+               <span class="pull-left">© {{@blog.title}} 2015</span>
+            </div>
+            <div class="col-xs-4">
+               <a href="#">Back to top</a>
+            </div>
+            <div class="col-xs-4 ">
+               <a class="pull-right" href="/rss"><img src="/assets/images/feed-icon-14x14.png"> Subscribe</a>
+            </div>
+         </div>
+      </div>
    </footer>
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

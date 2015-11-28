@@ -1,9 +1,10 @@
 {{!< default}}
 {{#post}}
-
    <div class="blog-post">
       <h2 class="blog-post-title">{{title}}</h2>
-      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by  {{#author}}<a href="{{url}}">{{name}}</a></p> {{/author}}
+      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by
+         {{#author}}<a href="{{url}}">{{name}}</a></p>
+      {{/author}}
       {{#if image}}
          <div class="blog-image-container">
             <img src="{{image}}" class="img-responsive blog-image">
@@ -18,9 +19,9 @@
       {{#if tags}}
          <div>
             <span class="tags">Tags:
-            {{#foreach tags}}
-               <a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a>
-            {{/foreach}}
+               {{#foreach tags}}
+                  <a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a>
+               {{/foreach}}
             </span>
          </div>
       {{/if}}
@@ -35,16 +36,16 @@
          <a class="icon-google-plus share-icon" href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
          </a>
       </section>
-      <hr>
-      <ul class="pager">
-         {{#prev_post}}
-            <li><a href="{{url}}">&larr; {{title}}</a> </li>
-         {{/prev_post}}
-         {{#next_post}}
-            <li><a href="{{url}}">{{title}} &rarr;</a></span>
-            </li>
-         {{/next_post}}
-      </ul>
+      <section>
+         <ul class="pager">
+            {{#prev_post}}
+               <li><a href="{{url}}">&larr; {{title}}</a> </li>
+            {{/prev_post}}
+            {{#next_post}}
+               <li><a href="{{url}}">{{title}} &rarr;</a></span>
+               </li>
+            {{/next_post}}
+         </ul>
+      </section>
    {{/is}}
-
 {{/post}}
