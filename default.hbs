@@ -23,50 +23,47 @@
 </head>
 
 <body>
-
-   <div class="blog-header" style='background-image: url("{{@blog.cover}}"); background-size:cover;'>
+   <div class="container">
+   {{#if @blog.cover}}
+      <div class="blog-header" style='background-image: url("{{@blog.cover}}"); background-size:cover;'>
+   {{else}}
+      <div class="blog-header">
+   {{/if}}
       {{#if @blog.logo}}
-      <div class="blog-logo">
-         <a href="{{@blog.url}}">
-            <img src="{{@blog.logo}}" class="img-responsive blog-logo-img" alt="{{@blog.title}}">
-         </a>
-
-      </div>
+         <div class="blog-logo">
+            <a href="{{@blog.url}}">
+               <img src="{{@blog.logo}}" class="img-responsive blog-logo-img" alt="{{@blog.title}}">
+            </a>
+         </div>
       {{else}}
          <span class="blog-title">{{@blog.title}}</span>
       {{/if}}
       <p class="lead blog-description">{{@blog.description}}</p>
 
-   </div>
-
-   {{ navigation }}
-
-   <div class="container blog-body">
-      <div class="row">
-
-         <div class="col-sm-12 blog-main">
-
-            {{{ body }}}
-
-         </div>
-         <!-- /.blog-main -->
-
-
-
-
-
-         </div>
-         <!-- /.blog-sidebar -->
       </div>
-      <!-- /.row -->
+
+      {{ navigation }}
    </div>
-   <!-- /.container -->
+
+
+
+   <div class="container">
+      <div class="blog-body">
+      <div class="row">
+         <div class="col-sm-12 blog-main">
+            {{{ body }}}
+         </div>
+         </div>
+      </div>
+      </div>
+   </div>
+
 
    <footer class="blog-footer">
       <p>© {{@blog.title}} 2015 | <a href="#">Back to top</a> | <a href="/rss">
          <img src="/assets/images/feed-icon-14x14.png"> Subscribe
-      </a></p>
-
+      </a>
+      </p>
    </footer>
 
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,6 +1,8 @@
 /*
- * Globals
- */
+* ==========================================================================
+* Global settings
+* ==========================================================================
+*/
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -14,11 +16,9 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #333;
 }
-
 
 /*
  * Override Bootstrap's default container.
@@ -30,6 +30,11 @@ h6, .h6 {
   }
 }
 
+/*
+* ==========================================================================
+* Blog header settings
+* ==========================================================================
+*/
 
 /*
  * Masthead for nav
@@ -49,6 +54,7 @@ h6, .h6 {
   font-weight: 500;
   font-size: 18px;
 }
+
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
@@ -70,13 +76,13 @@ h6, .h6 {
 }
 
 .blog-navbar {
-   background-color: white;
+   background-color: #f9f9f9;
    border: 1px solid #e5e5e5;
 }
 
 .blog-navbar a {
    font-size: 18px;
-   color: #999;
+   color: #000;
 }
 
 /*
@@ -84,18 +90,19 @@ h6, .h6 {
  */
 
 .blog-header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #999;
   text-align: center;
-  background-color: #000050;
+  background-color: #eeefff;
   border: 1px solid #e5e5e5;
+  border-radius: 5px;
 }
 
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
-  color: white;
+  color: black;
   font-size: 60px;
   font-weight: bold;
 }
@@ -105,8 +112,18 @@ h6, .h6 {
   color: #999;
 }
 
+/*
+* ==========================================================================
+* Main body settings
+* ==========================================================================
+*/
+
 .blog-body {
-   border-left: 1px solid #e5e5e5;
+   border-radius: 5px;
+   border: 1px solid #e5e5e5;
+   padding-left: 15px;
+   padding-right: 15px;
+
 }
 
 .blog-logo {
@@ -143,24 +160,7 @@ h6, .h6 {
   font-size: 18px;
   line-height: 1.5;
   padding-top: 30px;
-}
-
-/* Sidebar modules for boxing content */
-.sidebar-module {
-  font-size: 18px;
-  padding: 15px;
-  padding-top: 30px;
-  margin: 0 -15px 15px;
-}
-.sidebar-module-inset {
-  padding: 15px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-}
-.sidebar-module-inset p:last-child,
-.sidebar-module-inset ul:last-child,
-.sidebar-module-inset ol:last-child {
-  margin-bottom: 0;
+  padding-left: 20px;
 }
 
 
@@ -169,11 +169,11 @@ h6, .h6 {
   margin-bottom: 30px;
   text-align: center;
 }
-.pager > li  {
+.pager li > a {
   width: 160px;
   padding: 5px 5px;
   text-align: center;
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
 .page-number {
@@ -181,25 +181,30 @@ h6, .h6 {
 }
 
 /*
- * Blog posts
- */
+* ==========================================================================
+* Blog posts
+* ==========================================================================
+*/
 
 .blog-post {
   margin-bottom: 60px;
 }
+
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 40px;
 }
+
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
 }
 
-
 /*
- * Footer
- */
+* ==========================================================================
+* Footer settings
+* ==========================================================================
+*/
 
 .blog-footer {
   padding: 10px 0;
@@ -209,13 +214,17 @@ h6, .h6 {
   border-top: 1px solid #e5e5e5;
   margin-top: 20px;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
 
-/* ==========================================================================
-   1. Icons - Sets up the icon font and respective classes
-   ========================================================================== */
+/*
+* ==========================================================================
+* Icons - Sets up the icon font and respective classes
+* Taken from the Casper theme.
+* ==========================================================================
+*/
 
 /* Import the font file with the icons in it */
 @font-face {
