@@ -7,6 +7,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #555;
+  background-color: #f5f5ff;
 }
 
 h1, .h1,
@@ -100,7 +101,7 @@ h6, .h6 {
   padding: 10px;
   color: #999;
   text-align: center;
-  background-color: #eeefff;
+  background-color: #d8c0b6;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
 
@@ -147,6 +148,7 @@ h6, .h6 {
    padding-left: 15px;
    padding-right: 15px;
    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
+   background-color: white;
 }
 
 
@@ -182,6 +184,7 @@ h6, .h6 {
 
 
 /* Pagination */
+
 .pager {
   margin-bottom: 30px;
   text-align: center;
@@ -196,6 +199,7 @@ h6, .h6 {
 
 .page-number {
    padding: 5px 5px;
+   color: #999;
 }
 
 /*
