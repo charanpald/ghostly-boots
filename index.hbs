@@ -2,8 +2,10 @@
 
 {{#foreach posts}}
    <div class="blog-post">
-      <h1 class="blog-post-title">{{title}}</h1>
-      <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by  {{#author}}<a href="{{url}}">{{name}}</a></p> {{/author}}
+      <div class="blog-post-header">
+         <h1 class="blog-post-title">{{title}}</h1>
+         <p class="blog-post-meta">{{date format="DD MMMM YYYY"}} by  {{#author}}<a href="{{url}}">{{name}}</a></p> {{/author}}
+      </div>
       {{#if image}}
          <div class="blog-image-container">
             <img src="{{image}}" class="img-responsive blog-image">
