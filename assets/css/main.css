@@ -7,7 +7,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #555;
-  background-color: #f5f5ff;
+  background-color: #000000;
 }
 
 h1, .h1,
@@ -36,6 +36,11 @@ h6, .h6 {
     padding: 0px;
   }
 }
+
+img {
+   max-width: 100%;
+}
+
 
 /*
 * ==========================================================================
@@ -218,7 +223,7 @@ h6, .h6 {
 }
 
 .blog-post-header {
-   margin-bottom: 0.5em;
+   margin-bottom: 1.0em;
 }
 
 .blog-post-meta {
