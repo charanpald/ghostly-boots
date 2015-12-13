@@ -7,7 +7,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #555;
-  background-color: #eeeeff;
 }
 
 h1, .h1,
@@ -86,15 +85,16 @@ img {
   height: 0;
   margin-left: -5px;
   vertical-align: middle;
-  border-right: 0px solid transparent;
-  border-bottom: 5px solid;
-  border-left: 5px solid transparent;
+  border: 0px;
+
 }
 
 .blog-navbar {
-   background-color: #f9f9f9;
+   border-left: 0px;
+   border-right: 0px;
    background-image: none;
-   border: 1px solid #e5e5e5;
+   background-color: white;
+   box-shadow: none;
 }
 
 .blog-navbar a {
@@ -110,22 +110,20 @@ img {
   padding: 10px;
   color: #999;
   text-align: center;
-  background-color: #d8c0b6;
-  border: 1px solid #e5e5e5;
-  border-radius: 5px;
+  background-color: #000000;
+
 
 }
 
 .blog-header-gradient {
-    background-image: linear-gradient(to bottom, #fcfcff 0px, #fcfcfc 100%);
+    background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
     background-repeat: repeat-x;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
 }
 
 .blog-title {
   margin-top: 30px;
   margin-bottom: 0;
-  color: #000055;
+  color: #ffffff;
   font-size: 60px;
   font-weight: bold;
   text-shadow: 0px 3px 2px #999;
@@ -133,7 +131,7 @@ img {
 
 .blog-description {
   font-size: 20px;
-  color: #999;
+  color: #000;
 }
 
 .blog-logo {
@@ -152,11 +150,9 @@ img {
 */
 
 .blog-body {
-   border-radius: 5px;
-   border: 1px solid #e5e5e5;
+
    padding-left: 15px;
    padding-right: 15px;
-   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15) inset, 0 1px 5px rgba(0, 0, 0, 0.075);
    background-color: white;
 }
 
