@@ -15,7 +15,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 0;
+  margin-top: 0.7em;
   font-weight: normal;
   color: #333;
 }
@@ -164,11 +164,12 @@ img {
 }
 
 .blog-image {
-   border: 1px solid #e5e5e5;
+
 }
 
 .share {
    text-align: center;
+   padding: 2em;
 }
 
 .share-icon {
@@ -215,7 +216,7 @@ img {
 */
 
 .blog-post {
-  margin-bottom: 60px;
+  margin-bottom: 1em;
 }
 
 .blog-post-title {
