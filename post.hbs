@@ -5,9 +5,7 @@
          <h1 class="blog-post-title">{{title}}</h1>
          {{#unless page}}
             <p class="blog-post-meta">
-               {{#author}}<a href="{{url}}">{{name}}</a>
-               {{/author}}
-               {{date format="DD/MM/YY"}}
+               {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}, {{date format="DD/MM/YY"}}
             </p>
          {{/unless}}
       </div>

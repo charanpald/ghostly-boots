@@ -5,9 +5,7 @@
       <div class="blog-post-header">
          <h1 class="blog-post-title">{{title}}</h1>
          <p class="blog-post-meta">
-            {{#author}}<a href="{{url}}">{{name}}</a>
-            {{/author}}
-            <span>{{date format="DD/MM/YY"}}</span>
+            {{#author}}<a href="{{url}}">{{name}}</a>{{/author}}<span>, {{date format="DD/MM/YY"}}</span>
          </p>
       </div>
       {{#if image}}
