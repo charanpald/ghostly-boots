@@ -5,19 +5,14 @@
 */
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #555;
+   font-family: 'Open Sans', sans-serif;
+   color: #555;
 }
-
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 0.7em;
-  font-weight: normal;
-  color: #333;
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+   margin-top: 0.7em;
+   font-weight: normal;
+   color: #333;
+   text-align: left;
 }
 
 /*
@@ -25,26 +20,22 @@ h6, .h6 {
  */
 
 @media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
+   .container {
+      width: 970px;
+   }
 }
-
 @media (max-width: 768px) {
-  .container {
-    padding: 0px;
-  }
+   .container {
+      padding: 0px;
+   }
 }
-
 img {
    max-width: 100%;
    padding: 1em;
 }
-
 .no-padding {
    padding: 0;
 }
-
 .blog-post-title {
    font-weight: bold;
 }
@@ -55,44 +46,43 @@ img {
 * ==========================================================================
 */
 
+
 /*
  * Masthead for nav
  */
 
 .blog-masthead {
-  background-color: #428bca;
-  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+   background-color: #428bca;
+   -webkit-box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
+   box-shadow: inset 0 -2px 5px rgba(0, 0, 0, .1);
 }
 
 /* Nav links */
-.blog-nav-item {
-  position: relative;
-  display: inline-block;
-  padding: 10px;
-  font-weight: 500;
-  font-size: 14px;
-}
 
-.blog-nav-item:hover,
-.blog-nav-item:focus {
-  color: #fff;
-  text-decoration: none;
+.blog-nav-item {
+   position: relative;
+   display: inline-block;
+   padding: 10px;
+   font-weight: 500;
+   font-size: 14px;
+}
+.blog-nav-item:hover, .blog-nav-item:focus {
+   color: #fff;
+   text-decoration: none;
 }
 
 /* Active state gets a caret at the bottom */
+
 .nav .active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -5px;
-  vertical-align: middle;
-  border: 0px;
-
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 0;
+   height: 0;
+   margin-left: -5px;
+   vertical-align: middle;
+   border: 0px;
 }
-
 .blog-navbar {
    border-left: 0px;
    border-right: 0px;
@@ -100,7 +90,6 @@ img {
    background-color: white;
    box-shadow: none;
 }
-
 .blog-navbar a {
    font-size: 18px;
    color: #000;
@@ -111,37 +100,40 @@ img {
  */
 
 .blog-header {
-  padding: 10px;
-  color: #999;
-  text-align: center;
-  background-color: #000000;
-
-
+   padding: 10px;
+   color: #999;
+   text-align: center;
+   background-color: #000000;
 }
-
 .blog-header-gradient {
-    background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
-    background-repeat: repeat-x;
+   background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
+   background-repeat: repeat-x;
 }
-
 .blog-title {
-  margin-top: 30px;
-  margin-bottom: 0;
-  color: #ffffff;
-  font-size: 60px;
-  font-weight: bold;
-  text-shadow: 0px 3px 2px #999;
+   margin-top: 30px;
+   margin-bottom: 0;
+   color: #ffffff;
+   font-size: 60px;
+   font-weight: bold;
+   text-shadow: 0px 3px 2px #999;
 }
 
-.blog-description {
-  font-size: 20px;
-  color: #000;
+@media (min-width: 768px) {
+   .blog-description {
+      font-size: 20px;
+      color: #777;
+   }
+}
+
+@media (max-width: 768px) {
+   .blog-description {
+      display: none;
+   }
 }
 
 .blog-logo {
    padding-bottom: 20px;
 }
-
 .blog-logo-img {
    margin: 0 auto;
    padding: 10px;
@@ -154,28 +146,19 @@ img {
 */
 
 .blog-body {
-
    padding-left: 15px;
    padding-right: 15px;
    background-color: white;
 }
-
-
-
 .blog-image-container {
    padding-bottom: 20px;
    padding-right: 20px;
 }
-
-.blog-image {
-
-}
-
+.blog-image {}
 .share {
    text-align: center;
    padding: 2em;
 }
-
 .share-icon {
    padding-left: 3px;
    padding-right: 3px;
@@ -186,28 +169,26 @@ img {
  */
 
 .blog-main {
-  font-size: 18px;
-  line-height: 1.5;
-  padding-top: 30px;
-  padding-left: 20px;
-  text-align: justify;
+   font-size: 18px;
+   line-height: 1.5;
+   padding-top: 30px;
+   padding-left: 20px;
+   text-align: justify;
 }
-
 
 /* Pagination */
 
 .pager {
-  margin-bottom: 30px;
-  text-align: center;
+   margin-bottom: 30px;
+   text-align: center;
 }
 .pager li > a {
-  min-width: 150px;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-  border-radius: 2px;
+   min-width: 150px;
+   padding-left: 10px;
+   padding-right: 10px;
+   text-align: center;
+   border-radius: 2px;
 }
-
 .page-number {
    padding: 5px 5px;
    color: #999;
@@ -220,24 +201,18 @@ img {
 */
 
 .blog-post {
-  margin-bottom: 1em;
+   margin-bottom: 1em;
 }
-
 .blog-post-title {
-  margin-bottom: 0.0em;
+   margin-bottom: 0.0em;
 }
-
 .blog-post-header {
    margin-bottom: 1.0em;
 }
-
 .blog-post-meta {
-  color: #999;
+   color: #999;
 }
-
-.tags {
-
-}
+.tags {}
 
 /*
 * ==========================================================================
@@ -246,17 +221,16 @@ img {
 */
 
 .blog-footer {
-  padding: 10px;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
-  margin-top: 20px;
+   padding: 10px;
+   color: #999;
+   text-align: center;
+   background-color: #f9f9f9;
+   border-top: 1px solid #e5e5e5;
+   border-bottom: 1px solid #e5e5e5;
+   margin-top: 20px;
 }
-
 .blog-footer p:last-child {
-  margin-bottom: 0;
+   margin-bottom: 0;
 }
 
 /*
@@ -266,66 +240,69 @@ img {
 * ==========================================================================
 */
 
+
 /* Import the font file with the icons in it */
+
 @font-face {
-    font-family: "casper-icons";
-    src:url("../fonts/casper-icons.eot?v=1");
-    src:url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"),
-        url("../fonts/casper-icons.woff?v=1") format("woff"),
-        url("../fonts/casper-icons.ttf?v=1") format("truetype"),
-        url("../fonts/casper-icons.svg?v=1#icons") format("svg");
-    font-weight: normal;
-    font-style: normal;
+   font-family: "casper-icons";
+   src: url("../fonts/casper-icons.eot?v=1");
+   src: url("../fonts/casper-icons.eot?v=1#iefix") format("embedded-opentype"), url("../fonts/casper-icons.woff?v=1") format("woff"), url("../fonts/casper-icons.ttf?v=1") format("truetype"), url("../fonts/casper-icons.svg?v=1#icons") format("svg");
+   font-weight: normal;
+   font-style: normal;
 }
 
 /* Apply these base styles to all icons */
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
-    font-family: "casper-icons", "Open Sans", sans-serif;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    text-decoration: none !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+   font-family: "casper-icons", "Open Sans", sans-serif;
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   text-decoration: none !important;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
+
 .icon-ghost:before {
-    content: "\f600";
+   content: "\f600";
 }
 .icon-feed:before {
-    content: "\f601";
+   content: "\f601";
 }
 .icon-twitter:before {
-    content: "\f602";
-    font-size: 1.1em;
+   content: "\f602";
+   font-size: 1.1em;
 }
 .icon-google-plus:before {
-    content: "\f603";
+   content: "\f603";
 }
 .icon-facebook:before {
-    content: "\f604";
+   content: "\f604";
 }
 .icon-arrow-left:before {
-    content: "\f605";
+   content: "\f605";
 }
 .icon-stats:before {
-    content: "\f606";
+   content: "\f606";
 }
 .icon-location:before {
-    content: "\f607";
-    margin-left: -3px; /* Tracking fix */
+   content: "\f607";
+   margin-left: -3px;
+   /* Tracking fix */
 }
 .icon-link:before {
-    content: "\f608";
+   content: "\f608";
 }
 .icon-menu:before {
-    content: "\f609";
+   content: "\f609";
 }
+
 /*
     IMPORTANT: When making any changes to the icon font, be sure to increment
     the version number by 1 in the @font-face rule. `?v=1` becomes `?v=2`
