@@ -116,20 +116,17 @@ img {
    font-size: 60px;
    font-weight: bold;
 }
-
 @media (min-width: 768px) {
    .blog-description {
       font-size: 20px;
       color: #777;
    }
 }
-
 @media (max-width: 768px) {
    .blog-description {
       display: none;
    }
 }
-
 .blog-logo {
    padding-bottom: 0.5em;
 }
@@ -170,7 +167,7 @@ img {
 .blog-main {
    font-size: 18px;
    line-height: 1.5;
-   padding-top: 30px;
+   padding-top: 0.5em;
    padding-left: 20px;
    text-align: justify;
 }
@@ -212,6 +209,17 @@ img {
    color: #999;
 }
 .tags {}
+
+/*
+   * ==========================================================================
+   * Author page
+   * ==========================================================================
+   */
+
+.author-meta {
+   padding-top: 0.5em;
+   text-indent: 1em;
+}
 
 /*
 * ==========================================================================
