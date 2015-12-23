@@ -31,7 +31,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 img {
    max-width: 100%;
-   padding: 1em;
+   padding: 0.5em;
 }
 .no-padding {
    padding: 0;
@@ -103,7 +103,6 @@ img {
    padding: 10px;
    color: #999;
    text-align: center;
-   background-color: #000000;
 }
 .blog-header-gradient {
    background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
