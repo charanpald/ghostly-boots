@@ -19,19 +19,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
  * Override Bootstrap's default container.
  */
 
-@media (min-width: 1200px) {
    .container {
-      width: 970px;
+      max-width: 870px;
    }
-}
 @media (max-width: 768px) {
    .container {
       padding: 0px;
    }
 }
 img {
-   max-width: 100%;
-   padding: 0.5em;
+   max-width: 800px;
+   max-height: 600px;
+   margin-left: auto; 
+   margin-right: auto; 
 }
 .no-padding {
    padding: 0;
