@@ -38,6 +38,7 @@ img {
 }
 .blog-post-title {
    font-weight: bold;
+   text-align: justify;
 }
 
 /*
