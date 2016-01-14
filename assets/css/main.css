@@ -32,6 +32,8 @@ img {
    max-height: 600px;
    margin-left: auto; 
    margin-right: auto; 
+   padding-bottom: 1em; 
+   padding-top: 1em;
 }
 .no-padding {
    padding: 0;
@@ -147,8 +149,8 @@ img {
    background-color: white;
 }
 .blog-image-container {
-   padding-bottom: 20px;
-   padding-right: 20px;
+   padding-bottom: 0.5em;
+   padding-right: 0.5em;
 }
 .blog-image {}
 .share {
