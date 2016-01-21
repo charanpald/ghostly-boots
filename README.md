@@ -24,5 +24,5 @@ A simple, customisable [Ghost](https://ghost.org/) theme based on [Bootstrap] (h
 
 ## Credits
 
-Social media icons in posts from [Casper] (https://github.com/TryGhost/Casper)
-Twitter and RSS icons in navbar made by [Elegant Themes](http://www.elegantthemes.com) from [Flaticon](http://www.flaticon.com)
+* Social media icons in posts from [Casper] (https://github.com/TryGhost/Casper)
+* Twitter and RSS icons in navbar made by [Elegant Themes](http://www.elegantthemes.com) from [Flaticon](http://www.flaticon.com)
