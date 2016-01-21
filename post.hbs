@@ -19,10 +19,7 @@
    <section>
       {{#if tags}}
          <div>
-            <span class="tags">Tags:
-               {{#foreach tags}}
-                  <a href="{{url}}" title="{{name}}" class="tag-{{id}}">{{name}}</a>
-               {{/foreach}}
+            <span class="tags">Tags: {{tags separator=", "}}
             </span>
          </div>
       {{/if}}
