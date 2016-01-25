@@ -15,6 +15,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
    text-align: left;
 }
 
+hr {
+   margin-top: 0.3em; 
+   margin-bottom: 0.3em;  
+}
+
 /*
  * Override Bootstrap's default container.
  */
@@ -211,6 +216,8 @@ figure {
 }
 .blog-post-meta {
    color: #999;
+   margin-top: 5px;
+   margin-bottom: 5px;
 }
 .tags {}
 

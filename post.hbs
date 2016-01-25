@@ -4,9 +4,11 @@
       <div class="blog-post-header">
          <h1 class="blog-post-title">{{title}}</h1>
          {{#unless page}}
+	    <hr>
             <p class="blog-post-meta">
                {{#author}}<a href="{{url}}">{{name}}</a>{{/author}} - {{date format="DD/MM/YY"}}
             </p>
+	    <hr>
          {{/unless}}
       </div>
 
