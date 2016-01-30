@@ -16,8 +16,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 hr {
-   margin-top: 0.3em; 
-   margin-bottom: 0.3em;  
+   margin-top: 0.3em;
+   margin-bottom: 0.3em;
 }
 
 /*
@@ -35,9 +35,9 @@ hr {
 figure {
    max-width: 800px;
    max-height: 600px;
-   margin-left: auto; 
-   margin-right: auto; 
-   padding-bottom: 1em; 
+   margin-left: auto;
+   margin-right: auto;
+   padding-bottom: 1em;
    padding-top: 1em;
 }
 .no-padding {
@@ -46,6 +46,9 @@ figure {
 .blog-post-title {
    font-weight: bold;
    text-align: justify;
+}
+pre code {
+   font-size: 16px;
 }
 
 /*
