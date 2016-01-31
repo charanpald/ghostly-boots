@@ -45,7 +45,8 @@ figure {
 }
 .blog-post-title {
    font-weight: bold;
-   text-align: justify;
+   text-align: left;
+   margin-bottom: 0.0em;
 }
 pre code {
    font-size: 16px;
@@ -210,9 +211,6 @@ pre code {
 
 .blog-post {
    margin-bottom: 1em;
-}
-.blog-post-title {
-   margin-bottom: 0.0em;
 }
 .blog-post-header {
    margin-bottom: 1.0em;
