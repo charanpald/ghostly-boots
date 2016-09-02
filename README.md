@@ -10,10 +10,11 @@ A simple, customisable [Ghost](https://ghost.org/) theme based on [Bootstrap] (h
 * Fully responsive for use with mobiles and tablets
 * Readily customisable
 * Beautiful typography using Google Fonts
-* Works with Ghost 0.7+
+* Works with Ghost 0.10+
 * Social media sharing (Facebook, Twitter, Google+) for each post
-* Disqus comments (just add your own Disqus shortname in post.hbs)
+* Disqus comments (just add your own Disqus code injection)
 * Optimised page speed
+* Subscribe via Ghost
 
 ## Installing
 
