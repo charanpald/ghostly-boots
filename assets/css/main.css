@@ -20,6 +20,10 @@ hr {
    margin-bottom: 0.3em;
 }
 
+dd { 
+  marigin-bottom: 0.3em;
+}
+
 /*
  * Override Bootstrap's default container.
  */
