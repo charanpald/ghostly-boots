@@ -10,7 +10,7 @@ body {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-   margin-top: 0.0em;
+   margin-top: 0.7em;
    font-weight: normal;
    color: #333;
    text-align: left;
@@ -98,17 +98,14 @@ pre code {
 
 /* Nav links */
 
-.blog-nav-item {
-   position: relative;
-   display: inline-block;
-   padding: 10px;
-   font-weight: 500;
-   font-size: 14px;
-}
-
 .blog-nav-item:hover, .blog-nav-item:focus {
    color: #fff;
    text-decoration: none;
+}
+
+.navbar-brand {
+   line-height: 60px;
+   padding: 10px;
 }
 
 
@@ -123,13 +120,18 @@ pre code {
    margin-left: -5px;
    vertical-align: middle;
    border: 0px;
-
 }
 
-.navbar-default .navbar-nav > .active > a {
+.navbar-default .navbar-nav>.active>a {
    background-color: transparent;
    background-image: none;
    font-weight: bold;
+   box-shadow: none;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+   background-color: transparent;
+   background-image: none;
    box-shadow: none;
 }
 
@@ -141,9 +143,10 @@ pre code {
    box-shadow: none;
 }
 
-.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav>li>a {
    font-size: 18px;
 }
+
 
 /*
  * Blog name and description
@@ -176,6 +179,9 @@ pre code {
    .blog-logo-small-link {
       display: none;
    }
+   .nav>li>a {
+      padding-left: 0px;
+   }
 }
 
 @media (max-width: 768px) {
@@ -187,6 +193,24 @@ pre code {
    }
    .blog-logo-small {
       height: 32px;
+   }
+   .nav>li>a {
+      padding-left: 40px;
+   }
+   h1 {
+      font-size: 27px;
+   }
+   h2 {
+      font-size: 21px;
+   }
+   h3 {
+      font-size: 18px;
+   }
+   h4 {
+      font-size: 15px;
+   }
+   h5 {
+      font-size: 13px;
    }
 }
 
