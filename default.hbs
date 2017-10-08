@@ -7,16 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
 
     <!-- Bootstrap -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="{{asset "css/bootstrap.min.css"}}" rel="stylesheet">
+    <link href="{{asset "css/bootstrap-theme.min.css"}}" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="/assets/css/main.min.css" rel="stylesheet">
-    <link href="/assets/css/prism.css" rel="stylesheet">
+    <link href="{{asset "css/main.min.css"}}" rel="stylesheet">
+    <link href="{{asset "css/prism.css"}}" rel="stylesheet">
 
-    <link rel="shortcut icon" href="{{asset "/images//favicon.ico"}}">
 
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
@@ -33,7 +31,7 @@
 
 <body>
     <div class="container">
-        <div class="blog-header blog-header-gradient" {{#if @blog.cover}} style='background-image: url("{{@blog.cover}}"); background-size:cover;' {{/if}}>
+        <div class="blog-header blog-header-gradient" {{#if @blog.cover_image}} style='background-image: url("{{@blog.cover_image}}"); background-size:cover;' {{/if}}>
             {{#if @blog.logo}}
                 <div class="blog-logo">
                     <a href="{{@blog.url}}">
@@ -65,8 +63,8 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/assets/js/bootstrap.min.js"></script>
-    <script src="/assets/js/prism.js"></script>
+    <script src="{{asset "js/bootstrap.min.js"}}"></script>
+    <script src="{{asset "js/prism.js"}}"></script>
 </body>
 
 </html>
